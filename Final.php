@@ -2,7 +2,7 @@
 /**
  * @author RAJERISON Julien
  *
- * Final class et methode
+ * Final class and @method
  */
 
 /**
