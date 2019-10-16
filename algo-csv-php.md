@@ -1,14 +1,14 @@
 ```
 /**
-* @Var $fileType
+* @var $fileType
 **/
-$_form_upload = $this->createFormBuilder()->add('file', FileType::class)->getForm();
+$formUpload = $this->createFormBuilder()->add('file', FileType::class)->getForm();
 
 $your_big_array = array();
-$_file = _form_upload['file']->getData();
+$_file = $formUpload['file']->getData();
 
 /**
-* Check if file
+* Check if file exist
 **/
 if (($h = fopen("{$_file}", "r")) !== FALSE) {
    while (($data = fgetcsv($h, 1000, ",")) !== FALSE) {
